@@ -6,7 +6,7 @@ try:
     inp = raw_input("Please enter rate: ")
     rate= float(inp)
 except:
-    print "Please enter a number as input"
+    print ("Please enter a number as input")
     quit()
 
 def computepay(h,r):
@@ -16,4 +16,4 @@ def computepay(h,r):
         pay = (h*r)     
     return pay
 
-print computepay(hours,rate)
+print (computepay(hours,rate))
