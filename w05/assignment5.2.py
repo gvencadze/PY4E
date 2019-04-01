@@ -9,8 +9,8 @@ while True:
     try:
         num = float(inp)
     except:
-       # print "Please enter a number as input or \'done\'"
-        print "Invalid input"
+       # после ввода: 7, 2, bob, 10, 4 (вводить по одному числу и нажимать "ок") надо ввести "done"
+        print ("Invalid input")
         continue
     if smallest is None:
         smallest = num 
@@ -20,8 +20,8 @@ while True:
         smallest = num
 
 def done(largest,smallest):
-    print "Maximum is", int(largest)  
-    print "Minimum is", int(smallest)
+    print ("Maximum is", int(largest))
+    print ("Minimum is", int(smallest))
 
 done(largest,smallest)
 
