@@ -1,4 +1,3 @@
 # PY4E
-//Python course complete assignments
-//Это не мой оригинальный код, он собран с этого репозитория https://github.com/Lallo/PR4E
-//Здесь лишь исправлены ошибки в коде
+Python course complete assignments <br>
+//It isn't my original code, I have only fix some errors.
