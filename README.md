@@ -5,6 +5,10 @@ Python course complete assignments <br>
 <br>
  In '2 week' folder you can find python code + sample txt files (they must be unique, but i'm not sure about it)
 <br>
+ In folders w01-w10 you can find files with code to passing 1st and 2nd courses of specialization
+<br>
+ URL for every student is unique => you need to change URL to yours
+<br>
 <hr>
 [RU]
 Курс по Python от Coursera<br>
@@ -13,3 +17,5 @@ Python course complete assignments <br>
 В папке '2 week' лежат файлы с кодом + txt файлы (их содержание уникально, но это не точно)
 <br>
 Папки w01-w10 содержат файлы с кодом для сдачи на 1 и 2 курс специализации
+<br>
+В большинстве заданий ссылки генерируются для каждого студента => надо менять url на свой
