@@ -1,8 +1,4 @@
-#10.2 Write a program to read through the mbox-short.txt and figure out the distribution by hour of the day for each of the messages. You can pull the hour out from the 'From ' line by finding the time and then splitting the string a second time using a colon.
-#From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
-#Once you have accumulated the counts for each hour, print out the counts, sorted by hour as shown below. Note that the autograder does not have support for the sorted() function.
-
-#You can download the sample data at http://www.pythonlearn.com/code/mbox-short.txt
+#Название файла: mbox-short.txt, префикс: 'from'
 
 def openFile():
     fname = raw_input("Enter file name: ")
@@ -10,7 +6,7 @@ def openFile():
     try:
         fh = open(fname, 'r')
     except:
-        print "Error opening file", fname
+        print ("Error opening file", fname)
         quit()
     return fh
 
@@ -35,7 +31,7 @@ def sortTimes(d):
         lst.append((key,val))
     lst.sort()
     for val,key in lst:
-        print val,key
+        print (val,key)
     
 fh = openFile()
 sw = startsWith()
