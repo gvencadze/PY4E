@@ -6,7 +6,7 @@ try:
     inp = raw_input("Enter Rate per Hour:")
     rate = float(inp)
 except:
-    print "Error, please enter numeric input"
+    print ("Error, please enter numeric input")
     quit()
 
 #print rate, hours
