@@ -3,7 +3,7 @@
 Python course complete assignments <br>
 // It isn't my original code, I have only fix some errors.
 <br>
- In '2 week' folder you can find python code + sample txt files (they must be unique, but i'm not sure about it)
+ In 'Python Web Data/X week' folder you can find python code + sample txt files (they must be unique, but i'm not sure about it)
 <br>
  In folders w01-w10 you can find files with code to passing 1st and 2nd courses of specialization
 <br>
