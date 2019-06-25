@@ -1,39 +1,22 @@
-#Название файла: mbox-short.txt, префикс: 'from'
+name = raw_input("Enter file:")
+if len(name) < 1: 
+    name = "mbox-short.txt"
+handle = open(name)
 
-def openFile():
-    fname = raw_input("Enter file name: ")
-    if len(fname) < 1 : fname = "mbox-short.txt"
-    try:
-        fh = open(fname, 'r')
-    except:
-        print ("Error opening file", fname)
-        quit()
-    return fh
+counts = dict()
 
-def startsWith():
-    sw = raw_input("Enter line prefix to consider: ")
-    if len(sw) < 1 : sw = "From"
-    return sw
+for line in handle:
+    if line.startswith("From "):
+        time = line.split()[5].split(":")
+        counts [time[0]] = counts.get(time[0], 0) + 1
 
-def countTimes(lines,s):
-    counts = dict()
-    for line in lines:
-        if line.startswith(s) and not line.startswith(s+':'):
-            line = ((line.rstrip()).lstrip()).split()
-	    str = line[5]
-	    hour = str[0:str.find(":"):1]
-            counts[hour] = counts.get(hour,0) + 1
-    return counts
+#print sorted( [ (v,k) for k,v in counts.items()] )
 
-def sortTimes(d):
-    lst = list()
-    for key, val in d.items():
-        lst.append((key,val))
-    lst.sort()
-    for val,key in lst:
-        print (val,key)
-    
-fh = openFile()
-sw = startsWith()
-dictionary = countTimes(fh,sw)
-t = sortTimes(dictionary)
+list = list()
+
+for key, value in counts.items():
+    list.append( (key,value) )
+list.sort()
+
+for hour, counts in list:
+    print (hour, counts)
